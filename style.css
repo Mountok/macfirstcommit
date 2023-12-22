@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header{
+    padding: 24px 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(31, 31, 31);
+}
+.header_logo{
+    font-size: 30px;
+}
+.header_logo span{
+    color: coral;
+}
+
+.header_menu{}
+.header_menu a{
+    position: relative;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+.header_menu a::after{
+    position: absolute;
+    content: '';
+    bottom: 2px;
+    left: 50%;
+    translate: -50%;
+    height: 4px;
+    width: 10px;
+    opacity: 0;
+    background-color: coral;
+    border-radius: 4px;
+    transition: .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.header_menu a:hover::after{
+    opacity: 1;
+    width: 25px;
+    bottom: -5px;
+}
+
+/* ! Main */
+
+.main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgb(236, 236, 236);
+}
+
+/* * Presetation */
+
+.presentation{
+    border: 1px solid black;
+    padding: 100px 50px;
+}
